@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
+//クリック時にP2_GachaManagerを実行
 public class P2_GachaManager : MonoBehaviour
 {
     [SerializeField]
@@ -29,14 +30,14 @@ public class P2_GachaManager : MonoBehaviour
 
     public void OnClickGachaButton()
     {
-        gachaPickCharacterId = Random.Range(0, 6); //0~5までのIDのキャラクターが出る。
+        gachaPickCharacterId = Random.Range(0, 32); //0~31までのIDのキャラクターが出る。
 
-        Debug.Log(gachaPickCharacterId.ToString());
+        Debug.Log(gachaPickCharacterId.ToString()); //コンソールにログ
 
-        DrawPerform();
+        DrawPerform(); //DrawPerformを実行する。
 
         UserApplication.userDataManager.SetCharaHave(gachaPickCharacterId);
-        UserApplication.charaGridRenderer.RefreshGrid();
+        UserApplication.charaGridRenderer.RefreshGrid(); //入手したガチャキャラ状況に応じて、更新を行う。
     }
 
     public void DrawPerform() //引いたキャラを表示する。

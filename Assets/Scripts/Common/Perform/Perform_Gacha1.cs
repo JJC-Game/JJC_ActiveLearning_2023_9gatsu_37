@@ -5,17 +5,20 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+//ガチャキャラを表示するクラス。
 public class Perform_Gacha1
 {
-    private GameObject instance;
-    private Image image;
-    private Text name;
-    private Image back;
+    private GameObject instance; //ゲームオブジェクト
+    private Image image; //画像
+    private Text name; //名前
+    private Image back; //背景画像
 
     public void Init()
     {
+        //ゲームオブジェクトのプレハブを取得
         GameObject prefab = Resources.Load<GameObject>("Prefabs/Perform/UIParts_Perform_Gacha_1");
 
+        //インスタンスにプレハブを代入
         instance = GameObject.Instantiate(prefab);
         RectTransform rectTrans = instance.transform as RectTransform;
         instance.transform.SetParent(GameObject.Find("UIParts_Perform_Anchor").transform);

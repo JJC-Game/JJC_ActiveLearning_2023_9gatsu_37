@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6282301, b: 1, a: 1}
+  m_Color: {r: 0.95278615, g: 1, b: 0.33490568, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -515,7 +515,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2f0d989b40c23604d9f6106bcc2bd00e, type: 3}
+    m_Font: {fileID: 12800000, guid: 4ccbe51b06407fb4fb3678eb1818d516, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1355,6 +1355,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9130263962897582862, guid: f79ce55f9b317724aa6f6466fdf7c20a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -402
+      objectReference: {fileID: 0}
     - target: {fileID: 9130263962931535981, guid: f79ce55f9b317724aa6f6466fdf7c20a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1518,6 +1522,14 @@ PrefabInstance:
     - target: {fileID: 9130263963086647336, guid: f79ce55f9b317724aa6f6466fdf7c20a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130263963381007272, guid: f79ce55f9b317724aa6f6466fdf7c20a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2625
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130263963381007272, guid: f79ce55f9b317724aa6f6466fdf7c20a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9130263963546812260, guid: f79ce55f9b317724aa6f6466fdf7c20a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1900,7 +1912,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2f0d989b40c23604d9f6106bcc2bd00e, type: 3}
+    m_Font: {fileID: 12800000, guid: 4ccbe51b06407fb4fb3678eb1818d516, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0

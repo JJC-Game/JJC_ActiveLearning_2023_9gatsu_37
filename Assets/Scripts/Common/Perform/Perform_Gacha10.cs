@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+
+//ガチャ10連用のプログラム
 public class Perform_Gacha10
 {
     public GameObject instance;
