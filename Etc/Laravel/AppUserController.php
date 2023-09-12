@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class AppUserController extends Controller
 {
+    public function app_user($id)
+    {
+        $app_user = AppUser::find($id);
+        return view('app_user', ['app_user'=>$app_user]);
+    }
+
     /**
      * Display a listing of the resource.
      */
