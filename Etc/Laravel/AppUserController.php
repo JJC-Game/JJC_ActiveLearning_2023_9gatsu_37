@@ -13,14 +13,19 @@ class AppUserController extends Controller
         $has_chara_flag = $app_user->has_chara_flag;
         $result_string = "";
 
-        $rand_num = mt_rand(1, 10000);
-        $jouyo = $rand_num % 32;
-        $result_string = $result_string.$jouyo.",";
-        $jouyo_flag = 1 << $jouyo;
-        $app_user->has_chara_flag = $has_chara_flag | $jouyo_flag;
+        $gachaCount = 10;
+        for ($i = 0; $i < $gachaCount; $i++) {
+            $rand_num = mt_rand(1, 10000);
+            $jouyo = $rand_num % 32;
+            $result_string = $result_string.$jouyo.",";
+            $jouyo_flag = 1 << $jouyo;
+            $has_chara_flag = $has_chara_flag | $jouyo_flag;
+        }
+        $app_user->has_chara_flag = $has_chara_flag;
         $app_user->save();
 
         return view('play_chara_gacha', ['result_string' => $result_string]);
+
     }
 
 
